@@ -22,15 +22,30 @@
     </a>
 
     <!-- Header & Navbar -->
-    <header>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+ <!-- Standalone Logo & Header Navigation using Bootstrap Grid -->
+<header class="container-fluid py-3">
+  <div class="row align-items-center justify-content-between">
+    
+    <!-- قسم اللوجو (على الشمال في الشاشات الكبيرة وفي المنتصف في الموبايل) -->
+    <div class="col-12 col-sm-4 col-md-3 col-lg-2 text-center text-sm-start mb-3 mb-sm-0">
+      <a href="#home" class="standalone-logo d-inline-block">
+        <img src="./imges/A logo.png" alt="Ahmed Mohamed Logo" class="img-fluid" style="max-height: 50px;">
+      </a>
+    </div>
+
+    <!-- قسم الناف بار (روابط التنقل) -->
+    <div class="col-12 col-sm-8 col-md-9 col-lg-8 col-xl-7">
+      <nav class="d-flex flex-wrap justify-content-center justify-content-sm-end align-items-center gap-2 gap-md-4">
+        <a href="#home" class="active px-2 py-1">Home</a>
+        <a href="#about" class="px-2 py-1">About</a>
+        <a href="#projects" class="px-2 py-1">Projects</a>
+        <a href="#skills" class="px-2 py-1">Skills</a>
+        <a href="#contact" class="px-2 py-1">Contact</a>
+      </nav>
+    </div>
+
+  </div>
+</header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -174,13 +189,27 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    
+    <!-- Title -->
+    <div class="row text-center mb-4">
+      <div class="col-12">
         <h2 class="section-title">Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="email-display">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>ahmedmohamedsobhy9@gmail.com</span>
+      </div>
+    </div>
+
+    <!-- Contact Content Box -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+        
+        <div class="contact-info text-center p-4 rounded shadow-sm">
+          
+          <!-- Email Display -->
+          <div class="email-display d-flex align-items-center justify-content-center flex-wrap gap-2 mb-4">
+            <i class="fa-solid fa-envelope fs-4"></i>
+            <span class="fs-5 text-break">ahmedmohamedsobhy9@gmail.com</span>
                 </div>
 
                 <div class="social-buttons">
