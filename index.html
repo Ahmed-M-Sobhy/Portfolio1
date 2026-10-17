@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img" href="./imges/A logo.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Ahmed Mohamed</title>
+
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -16,37 +18,16 @@
     <div class="ambient-glow" style="top: 10%; left: -100px;"></div>
     <div class="ambient-glow" style="bottom: 20%; right: -100px;"></div>
 
-    <!-- Standalone Top-Left Logo -->
-    <a href="#home" class="standalone-logo">
-        <img src="./imges/A logo.png" alt="Ahmed Mohamed Logo">
-    </a>
-
-    <!-- Header & Navbar -->
- <!-- Standalone Logo & Header Navigation using Bootstrap Grid -->
-<header class="container-fluid py-3">
-  <div class="row align-items-center justify-content-between">
-    
-    <!-- قسم اللوجو (على الشمال في الشاشات الكبيرة وفي المنتصف في الموبايل) -->
-    <div class="col-12 col-sm-4 col-md-3 col-lg-2 text-center text-sm-start mb-3 mb-sm-0">
-      <a href="#home" class="standalone-logo d-inline-block">
-        <img src="./imges/A logo.png" alt="Ahmed Mohamed Logo" class="img-fluid" style="max-height: 50px;">
-      </a>
-    </div>
-
-    <!-- قسم الناف بار (روابط التنقل) -->
-    <div class="col-12 col-sm-8 col-md-9 col-lg-8 col-xl-7">
-      <nav class="d-flex flex-wrap justify-content-center justify-content-sm-end align-items-center gap-2 gap-md-4">
-        <a href="#home" class="active px-2 py-1">Home</a>
-        <a href="#about" class="px-2 py-1">About</a>
-        <a href="#projects" class="px-2 py-1">Projects</a>
-        <a href="#skills" class="px-2 py-1">Skills</a>
-        <a href="#contact" class="px-2 py-1">Contact</a>
+<!-- Header & Navbar -->
+    <header class="fixed-top w-100">
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </div>
-
-  </div>
-</header>
-
+    </header>
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-text">
@@ -135,7 +116,7 @@
                 <img src="./imges/Velox_Motors_Shop.png" alt="Graphic Design" class="project-img">
                 <div class="project-info">
                     <h3>Velox Motors</h3>
-                    <p>​An interactive front-end web platform designed for a car dealership to streamline vehicle discovery. It allows users to explore various car models, review detailed specs and pricing, and book test drives through a clean, modern, and fully responsive layout.</p>
+                    <p>An interactive front-end web platform designed for a car dealership to streamline vehicle discovery. It allows users to explore various car models, review detailed specs and pricing, and book test drives through a clean, modern, and fully responsive layout.</p>
                     <a href="https://ahmed-m-sobhy.github.io/Velox_Motors_Shop/" target="_blank" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.85rem;">Demo</a>
                 </div>
             </div>
@@ -189,40 +170,39 @@
     </section>
 
     <!-- Contact Section -->
-    <!-- Contact Section -->
-<section id="contact" class="py-5">
-  <div class="container">
-    
-    <!-- Title -->
-    <div class="row text-center mb-4">
-      <div class="col-12">
-        <h2 class="section-title">Contact Me</h2>
-      </div>
-    </div>
-
-    <!-- Contact Content Box -->
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+    <section id="contact" class="py-5">
+      <div class="container">
         
-        <div class="contact-info text-center p-4 rounded shadow-sm">
-          
-          <!-- Email Display -->
-          <div class="email-display d-flex align-items-center justify-content-center flex-wrap gap-2 mb-4">
-            <i class="fa-solid fa-envelope fs-4"></i>
-            <span class="fs-5 text-break">ahmedmohamedsobhy9@gmail.com</span>
-                </div>
+        <!-- Title -->
+        <div class="row text-center mb-4">
+          <div class="col-12">
+            <h2 class="section-title">Contact Me</h2>
+          </div>
+        </div>
 
-                <div class="social-buttons">
-                    <a href="https://www.linkedin.com/in/ahmed-mohammed72/" target="_blank" class="social-btn">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://wa.me/01020961705" target="_blank" class="social-btn">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="https://github.com/Ahmed-M-Sobhy" target="_blank" class="social-btn">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
+        <!-- Contact Content Box -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+            
+            <div class="contact-info text-center p-4 rounded shadow-sm">
+              
+              <!-- Email Display -->
+              <div class="email-display d-flex align-items-center justify-content-center flex-wrap gap-2 mb-4">
+                <i class="fa-solid fa-envelope fs-4"></i>
+                <span class="fs-5 text-break">ahmedmohamedsobhy9@gmail.com</span>
+              </div>
+
+              <div class="social-buttons">
+                  <a href="https://www.linkedin.com/in/ahmed-mohammed72/" target="_blank" class="social-btn">
+                      <i class="fa-brands fa-linkedin"></i> LinkedIn
+                  </a>
+                  <a href="https://wa.me/01020961705" target="_blank" class="social-btn">
+                      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                  </a>
+                  <a href="https://github.com/Ahmed-M-Sobhy" target="_blank" class="social-btn">
+                      <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+              </div>
             </div>
 
             <!-- Send Message Form -->
@@ -243,7 +223,9 @@
                     <i class="fa-solid fa-check-circle"></i> Your message has been sent successfully!
                 </div>
             </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- JavaScript -->
@@ -279,5 +261,8 @@
             });
         });
     </script>
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
